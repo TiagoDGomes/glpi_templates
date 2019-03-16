@@ -7,13 +7,11 @@
     <div>
         <p>Olá, ##reservation.user##</p>
         <p>
-            A reserva de <strong>##reservation.itemtype## (##reservation.item.name##)</strong> 
-            foi registrada com sucesso.
+            Esta é uma mensagem de alerta sobre a reserva <strong>##reservation.itemtype## (##reservation.item.name##)</strong>: 
+            <em>##reservation.action##</em>.            
         </p>
-        <p>
-            Por favor, para que não haja problemas com os demais usuários, 
-            atente-se aos horários de retirada e de devolução:
-        </p>
+        <p>Caso já tenha devolvido, ignore esta mensagem.</p>
+        <hr>
         <p>
             <strong style="color: #459436; text-decoration: underline;">##lang.reservation.begin##:</strong>
             ##reservation.begin##
@@ -22,7 +20,7 @@
             <strong style="color: #459436; text-decoration: underline;">##lang.reservation.end##:</strong>
             ##reservation.end##
         </p>        
-        <hr>
+        
         ##IFreservation.tech##
         <p>
             <strong style="color: #459436; text-decoration: underline;">##lang.reservation.tech##:</strong>
@@ -32,7 +30,7 @@
         <p>
             <strong style="color: #459436; text-decoration: underline;">##lang.reservation.comment##:</strong> 
             ##reservation.comment##
-        </p>            
+        </p>        
     </div>
     <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0">
 </div>

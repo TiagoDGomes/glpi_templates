@@ -1,0 +1,29 @@
+<div style="font-family: Arial,sans-serif;">
+    <h1 style="font-size: 1.3em; color: white; background-color: #459436; margin: 0; padding: .5em .5em 1em .5em;">[###ticket.id##] ##ticket.title##</h1>
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
+    
+    <p>Olá, ##ticket.item.user##</p>
+    <p>O seu chamado foi registrado com este número de referência: #<strong>##ticket.id##</strong>.</p>
+    <p>
+        Para adicionar um acompanhamento (ou informações adicionais), 
+        você pode responder a esta mensagem (escrevendo acima ou abaixo da marcação indicada) ou 
+        <a href="##ticket.url##">acessar o sistema GLPI</a>.
+    </p>
+    ##IFticket.category##
+    <p>
+        <strong>Atenção</strong>: como o campo de categoria não pôde ser definida, seu chamado terá prioridade baixa. <br />
+        Tente sempre mandar chamados diretamente pelo sistema para que você possa definir a categoria e todos os demais itens 
+        relacionados ao seu chamado (computadores, local do chamado etc.). 
+        Fazendo isso, seu chamado será atendido mais rapidamente.
+    </p>
+    ##ENDIFticket.category##
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
+    <div style="padding: 1.3em; margin: 3px 0 5px 0; border: 1px dashed black; font-size: 0.9em;">
+        <p style="text-align: center"><strong><a style="color: #459436;" href="##ticket.url##">##ticket.title##</a></strong></p> 
+        <hr>
+        <div>##ticket.content##</div>
+        <hr>
+        <p><strong>##ticket.author##</strong></p>
+    </div>
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
+</div>

@@ -1,0 +1,18 @@
+<div style="font-family: Arial,sans-serif;">
+    <h1 style="font-size: 1.3em; color: white; background-color: #459436; margin: 0; padding: .5em .5em 1em .5em;">
+        [###ticket.id##] ##ticket.title##
+    </h1>
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />   
+    ##FOREACHLASTfollowups## 
+    <div style="margin-top: 1em">
+        ##followup.description##
+    </div>
+    <p>
+        <strong>##followup.author##</strong> (##followup.date## - ##followup.requesttype##)
+    </p>
+    ##ENDFOREACHfollowups##
+    <hr>
+    <p style="font-size:.85em">Para responder a este acompanhamento, encaminhe seu texto acima ou abaixo dos delimitadores indicados nesta mensagem, ou <a href="##ticket.url##">acesse o sistema GLPI</a> para mais detalhes do chamado.</p>
+    </div>
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
+</div>
