@@ -1,36 +1,16 @@
-
 <div style="font-family: Arial,sans-serif;">
-    <h1 style="font-size: 1.3em; color: white; background-color: #459436; margin: 0; padding: .5em .5em 1em .5em;">
-        ##reservation.action##: ##reservation.item.name## 
-    </h1>
-    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0">
+    <h1 style="font-size: 1.3em; color: white; background-color: #459436; margin: 0; padding: .5em .5em 1em .5em;">##reservation.action##: ##reservation.item.name##</h1>
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
     <div>
         <p>Olá, ##reservation.user##</p>
         <p>A reserva de <strong>##reservation.itemtype## (##reservation.item.name##)</strong> foi registrada com sucesso.</p>
         <p>Por favor, para que não haja problemas com os demais usuários, atente-se ao horário definido para devolução:</p>
-        <p>
-            <strong style="color: #8b8c8f; text-decoration: underline;">
-                ##lang.reservation.begin##:
-            </strong>
-            ##reservation.begin##
-        </p>
-        <p>
-            <strong style="color: #8b8c8f; text-decoration: underline;">
-                ##lang.reservation.end##: 
-            </strong>
-            ##reservation.end##
-        </p>
-        <p>
-            <strong style="color: #8b8c8f; text-decoration: underline;">
-                ##lang.reservation.comment##:
-            </strong> 
-            ##reservation.comment##
-        </p>
-        ##IFreservation.tech##<p>
-            <strong style="color: #8b8c8f; text-decoration: underline;">##lang.reservation.tech##: </strong>
-            ##reservation.tech##
-        </p>        
+        <p><strong style="color: #8b8c8f; text-decoration: underline;"> ##lang.reservation.begin##: </strong> ##reservation.begin##</p>
+        <p><strong style="color: #8b8c8f; text-decoration: underline;"> ##lang.reservation.end##: </strong> ##reservation.end##</p>
+        <hr />##IFreservation.tech##
+        <p><strong style="color: #8b8c8f; text-decoration: underline;">##lang.reservation.tech##: </strong> ##reservation.tech##</p>
         ##ENDIFreservation.tech##
+        <p><strong style="color: #8b8c8f; text-decoration: underline;"> ##lang.reservation.comment##: </strong> ##reservation.comment##</p>
     </div>
-    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0">
+    <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
 </div>
