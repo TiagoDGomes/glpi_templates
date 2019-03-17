@@ -3,16 +3,26 @@
         [###ticket.id##] ##ticket.title##
     </h1>
     <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />   
+    
     ##FOREACHLASTfollowups## 
-    <div style="margin-top: 1em">
+    <div style="margin-top: 1em; ">
+    <div style="border-left: 1px solid silver;border-right: 1px solid silver;padding: 12px 6px 12px 6px;">
         ##followup.description##
     </div>
     <p>
         <strong>##followup.author##</strong> (##followup.date## - ##followup.requesttype##)
     </p>
-    ##ENDFOREACHfollowups##
-    <hr>
-    <p style="font-size:.85em">Para responder a este acompanhamento, encaminhe seu texto acima ou abaixo dos delimitadores indicados nesta mensagem, ou <a href="##ticket.url##">acesse o sistema GLPI</a> para mais detalhes do chamado.</p>
     </div>
+    ##ENDFOREACHfollowups##
+
+    <hr>
+    <p style="font-size:.85em">
+        Para responder a este acompanhamento, encaminhe seu texto acima ou abaixo dos delimitadores indicados nesta mensagem, 
+        ou <a href="##ticket.url##">acesse o sistema GLPI</a> para mais detalhes do chamado.
+    </p>
+    <p style="background-color: #f2f2f2; padding: 1em; text-align: center">
+        <a href="##ticket.url##">##ticket.url##</a>
+    </p>    
+    
     <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
 </div>

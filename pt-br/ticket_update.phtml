@@ -3,8 +3,13 @@
         [##ticket.id##] ##ticket.title##
     </h1>
     <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />   
-    <p>Esta é uma mensagem de atualização do <a href="##ticket.url##">chamado ###ticket.id##</a>: <em>##ticket.action##</em></p>
-    <p><a href="##ticket.url##">Acesse o GLPI</a> para obter todos os detalhes.</p>
+    <p>Esta mensagem é para notificar que houve alterações no chamado <strong>###ticket.id##</strong>: <em>##ticket.action##</em></p>
+    <p>Para mais detalhes ou funcionalidades,  
+        <a href="##ticket.url##">acesse o sistema GLPI</a>.
+    </p>
+    <p style="background-color: #dddddd; padding: 1em; text-align: center">
+        <a href="##ticket.url##">##ticket.url##</a>
+    </p>
     <hr>
     <p>
         ##IFticket.category##

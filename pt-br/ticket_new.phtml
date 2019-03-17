@@ -2,14 +2,26 @@
     <h1 style="font-size: 1.3em; color: white; background-color: #459436; margin: 0; padding: .5em .5em 1em .5em;">[###ticket.id##] ##ticket.title##</h1>
     <hr style="background-color: #8ec547; min-height: 1.3em; border: 0; margin: 0;" />
     
-    <p>Olá, ##ticket.item.user##</p>
+    <p>Olá, ##ticket.item.user##.</p>
     <p>O seu chamado foi registrado com este número de referência: #<strong>##ticket.id##</strong>.</p>
+    
+    
     <p>
         Para adicionar um acompanhamento (ou informações adicionais), 
-        você pode responder a esta mensagem (escrevendo acima ou abaixo da marcação indicada) ou 
-        <a href="##ticket.url##">acessar o sistema GLPI</a>.
+        você pode responder a esta mensagem escrevendo acima ou abaixo das marcações indicadas. 
     </p>
-    ##IFticket.category##
+    <p>Para mais detalhes ou funcionalidades,  
+        <a href="##ticket.url##">acesse o sistema GLPI</a>.
+    </p>
+
+    <p style="background-color: #dddddd; padding: 1em; text-align: center">
+        <a href="##ticket.url##">##ticket.url##</a>
+    </p>
+
+
+
+    
+    ##IFticket.category=25##
     <p>
         <strong>Atenção</strong>: como o campo de categoria não pôde ser definida, seu chamado terá prioridade baixa. <br />
         Tente sempre mandar chamados diretamente pelo sistema para que você possa definir a categoria e todos os demais itens 
